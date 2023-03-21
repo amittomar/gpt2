@@ -14,11 +14,11 @@ import argparse
 
 def default_hparams():
     parser = argparse.ArgumentParser()
-    argparse.add_argument('--n_vocab', type=int, default=0)
-    argparse.add_argument('--n_ctx', type=int, default=1024)
-    argparse.add_argument('--n_embd', type=int, default=768)
-    argparse.add_argument('--n_head', type=int, default=12)
-    argparse.add_argument('--n_layer', type=int, default=12)
+    parser.add_argument('--n_vocab', type=int, default=0)
+    parser.add_argument('--n_ctx', type=int, default=1024)
+    parser.add_argument('--n_embd', type=int, default=768)
+    parser.add_argument('--n_head', type=int, default=12)
+    parser.add_argument('--n_layer', type=int, default=12)
     print(parser.parse_args())
     return parser.parse_args()
 

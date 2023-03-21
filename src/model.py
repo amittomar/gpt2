@@ -1,16 +1,6 @@
 import numpy as np
 import tensorflow as tf
 import argparse
-# from tensorflow.contrib.training import HParams
-
-# def default_hparams():
-#     return HParams(
-#         n_vocab=0,
-#         n_ctx=1024,
-#         n_embd=768,
-#         n_head=12,
-#         n_layer=12,
-#     )
 
 def default_hparams():
     parser = argparse.ArgumentParser()
@@ -19,7 +9,6 @@ def default_hparams():
     parser.add_argument('--n_embd', type=int, default=768)
     parser.add_argument('--n_head', type=int, default=12)
     parser.add_argument('--n_layer', type=int, default=12)
-    print(parser.parse_args())
     return parser.parse_args()
 
 

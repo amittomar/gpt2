@@ -19,6 +19,7 @@ def default_hparams():
     argparse.add_argument('--n_embd', type=int, default=768)
     argparse.add_argument('--n_head', type=int, default=12)
     argparse.add_argument('--n_layer', type=int, default=12)
+    print(parser.parse_args())
     return parser.parse_args()
 
 
